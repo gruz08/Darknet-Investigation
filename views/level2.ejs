@@ -1,0 +1,14 @@
+<h2>HUMAN CHECK</h2>
+
+<p>count only letters</p>
+
+<% if (error) { %>
+    <p class="error">wrong value</p>
+<% } %>
+
+<form action="/verify" method="POST">
+    <input type="number" name="count">
+    <button>send</button>
+</form>
+
+<div hidden id="note">ignore spaces</div>
